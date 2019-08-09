@@ -1,58 +1,4 @@
-<h3 align="center">
-  <img src="assets/text_predictor_icon_web.png" width="300">
-</h3>
-
-# Text Predictor
-Character-level **RNN** (Recurrent Neural Net) **LSTM** (Long Short-Term Memory) implemented in Python 2.7/TensorFlow in order to predict a text based on a given dataset. 
-
-<br>
-
-Check out corresponding Medium article:
-
-[Text Predictor - Generating Rap Lyrics with Recurrent Neural Networks (LSTMs)📄](https://towardsdatascience.com/text-predictor-generating-rap-lyrics-with-recurrent-neural-networks-lstms-c3a1acbbda79)
-
----
-
-Heavily influenced by: [http://karpathy.github.io/2015/05/21/rnn-effectiveness/]().
-
-## Idea
-1. Train RNN LSTM  on a given dataset (.txt file).
-2. Predict text based on a trained model.
-
-## Datasets
-	kanye - Kanye West's discography (332 KB)
-	darwin - the complete works of Charles Darwin (20 MB)
-	reuters - a collection of Reuters headlines (95 MB)
-	war_and_peace - Leo Tolstoy's War and Peace novel (3 MB)
-	wikipedia - excerpt from English Wikipedia (48 MB) 
-	hackernews - a collection of Hackernews headlines (90 KB)
-	sherlock - a collection of books with Sherlock Holmes (3 MB)
-	shakespeare - the complete works of William Shakespeare (4 MB)
-	tagore - short stories by Rabindranath Tagore (2.6 MB)
-Feel free to add new datasets. Just create a folder in the `./data` directory and put an `input.txt` file there. Output file along with the training plot will be automatically generated there.
-	
-	
-## Usage
-1. Clone the repo.
-2. Go to the project's root folder.
-3. Install required packages`pip install -r requirements.txt`.
-4. `python text_predictor.py <dataset>`.
-
-
-## Results
-
-Each dataset were trained with the same hyperparameters.
-
-**Hyperparameters**
-
-	BATCH_SIZE = 32
-	SEQUENCE_LENGTH = 50
-	LEARNING_RATE = 0.01
-	DECAY_RATE = 0.97
-	HIDDEN_LAYER_SIZE = 256
-	CELLS_SIZE = 2
-
-
+# Solutions summary of all the inputs and outputs 
 
 ### Sherlock
 <img src="data/sherlock/loss.png" width="500">
@@ -396,19 +342,3 @@ Iteration: **511000**
 	না, তবু যেমন লাবণ্য প্রামলা ছাড়িয়া দিল, তাহাদের এমন সাদাসিধা বলিল, 'তুমি তোলা হাসি আর কেউ ছেলেমানুষ নাই।'
 	সতীশ। দুটি ভীত মেজিয়া বলিলাম, 'দাদা, তোমাকে গেলাম না। পথিকেরা খাতা। হবির টেনে উপবাস লাগলে। অন্যায় সকলের সার্জনে আমাদের বাড়ির সূক্ষ্ণ পুটের ভাটাটা বোনের পদনার উপর বহিয়া অস্থির করিয়া পাই। 		 	 ঝোকস্বলীনাপানকে চিহ্ন লইয়া দাটির ননীর মধ্য হইতে পরবার সহযাত্রী বলিব। নিজেকে টেঁকে না। আজ তোমাকে আমার বাড়ির ইচ্ছা হয়ে উঠে।
 	উল্টা করিবেন, 'হেমথারা লক্ষ্য করে গেল। ইতিমধ্যে সমস্ত যত্নে বাহির হইতে পরিতে হাজার দীপ
-
-
-## Author
-
-**Greg (Grzegorz) Surma**
-
-[**PORTFOLIO**](https://gsurma.github.io)
-
-[**GITHUB**](https://github.com/gsurma)
-
-[**BLOG**](https://medium.com/@gsurma)
-
-<a href="https://www.paypal.com/paypalme2/grzegorzsurma115">
-  <img alt="Support via PayPal" src="https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg"/>
-</a>
-
